@@ -1,0 +1,82 @@
+,>>>,<<, 
+// Got input
+// {ac0b}
+//   ^
+>>
+[
+	>+
+	>+
+	<<-
+]
+>
+// Moved and copied b
+// {ac00 bb00}
+//      ^
+[
+	>
+	[
+		>+
+		>+
+		<<-
+	]
+	>>
+	[
+		<<+
+		>>-
+	]
+	<<<-
+]
+>[-]
+// Calculated (bb) and cleared spare b
+// {ac00 00(bb)0}
+//        ^
+<<<<<
+[
+	>
+	[
+		>+
+		>+
+		<<-
+	]
+	>>
+	[
+		<<+
+		>>-
+	]
+	<<<-
+]
+>[-]
+// Calculted (ac) and cleared spare c
+// {00(ac)0 00(bb)0}
+//   ^
+++++
+// Ready for (4ac) multiplication
+// {04(ac)0 00(bb)0}
+//           ^
+[
+	>
+	[
+		>+
+		>+
+		<<-
+	]
+	>>
+	[
+		<<+
+		>>-
+	]
+	<<<-
+]
+>[-]
+// Calculated (4ac) and cleared spare (ac)
+// {000(4ac) 00(bb)0}
+//        ^
+[
+	>>>-
+	<<<-
+]
+>>>
+// Calculated descriminant 
+// {0000 00D0}
+//         ^
+.
